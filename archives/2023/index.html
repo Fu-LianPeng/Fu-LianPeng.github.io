@@ -296,10 +296,10 @@
   var titleTime;
   document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
-      document.title = "离开了嘛" + originTitle;
+      document.title = "离开了嘛 by" + originTitle;
       clearTimeout(titleTime);
     } else {
-      document.title = "欢迎回来" + originTitle;
+      document.title = "欢迎回来 by" + originTitle;
       titleTime = setTimeout(function () {
         document.title = originTitle;
       }, 2000);
